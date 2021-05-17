@@ -1,4 +1,5 @@
 import { defineConfig } from 'dumi';
+const pkg = require('./package.json');
 
 export default defineConfig({
   title: 'nsne-react-component',
@@ -6,7 +7,7 @@ export default defineConfig({
   // logo: '',
   outputPath: 'docs-dist',
   antd: {},
-  publicPath: '/react-component/',
-  base: '/react-component/',
+  publicPath: `/${pkg.name}/`,
+  base: `/${pkg.name}/`,
   // more config: https://d.umijs.org/config
 });
