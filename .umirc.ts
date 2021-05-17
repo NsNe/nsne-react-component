@@ -6,5 +6,7 @@ export default defineConfig({
   // logo: '',
   outputPath: 'docs-dist',
   antd: {},
+  publicPath: '/react-component/',
+  base: '/react-component/',
   // more config: https://d.umijs.org/config
 });
