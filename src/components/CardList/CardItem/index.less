@@ -1,0 +1,22 @@
+@import '../../../index.less';
+@prefix: @component-prefix;
+.@{prefix}-cardItem-container {
+  margin-bottom: 16px;
+  .@{prefix}-cardItem-expand-row {
+    padding: 24px;
+    background-color: rgba(0, 0, 0, 0.02);
+    border: @border-normal;
+    border-top: 0;
+  }
+  .@{prefix}-cardItem {
+    background: #fff;
+    border: @border-normal;
+    border-radius: @border-radius;
+    padding: 16px;
+    &-row-title {
+      font-family: @font-family-medium;
+      font-size: @font-size-medium;
+      color: rgba(0, 0, 0, 0.85);
+    }
+  }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Drag</title>
+    <g id="患者模块" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="结构化病历实体图标" transform="translate(-64.000000, -757.000000)">
+            <g id="Drag" transform="translate(64.000000, 757.000000)">
+                <rect id="矩形" transform="translate(12.000000, 12.000000) rotate(-270.000000) translate(-12.000000, -12.000000) " x="-1.77635684e-15" y="0" width="24" height="24"></rect>
+                <path d="M20.5,15.5 L20.5,13.5 L2.5,13.5 L2.5,15.5 L20.5,15.5 Z M20.5,10.5 L20.5,8.5 L2.5,8.5 L2.5,10.5 L20.5,10.5 Z" fill-opacity="0.65" fill="#000000" transform="translate(11.500000, 12.000000) rotate(-270.000000) translate(-11.500000, -12.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

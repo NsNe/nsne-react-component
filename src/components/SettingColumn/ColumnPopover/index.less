@@ -1,0 +1,99 @@
+@import '../../../index.less';
+@prefix: @component-prefix;
+
+.@{prefix}-settingColumn-overlay {
+  .@{prefix}-settingColumn {
+    &-header {
+      height: 32px;
+      border-bottom: @border-normal;
+      .flex_init_func(space-between, center);
+      padding: 0 16px;
+      a {
+        color: @research-theme-color;
+      }
+    }
+
+    &-footer {
+      padding: 0 16px;
+      .flex_init_func(flex-end, flex-end);
+      height: 40px;
+      border-top: @border-normal;
+      border-bottom: 0;
+      padding-bottom: 8px;
+      &-cancelBtn {
+        &,
+        &:hover,
+        &:focus,
+        &:active {
+          margin-right: 8px;
+          border: 1px solid rgba(0, 0, 0, 0.25);
+          color: rgba(0, 0, 0, 0.85);
+          text-shadow: none;
+          box-shadow: none;
+          // 移除按钮动画
+          &[ant-click-animating-without-extra-node]:after {
+            animation: none !important;
+          }
+        }
+      }
+
+      &-saveBtn {
+        &,
+        &:hover,
+        &:focus,
+        &:active {
+          background: #fff;
+          color: @research-theme-color;
+          border-color: @research-theme-color;
+          text-shadow: none;
+          box-shadow: none;
+        }
+      }
+    }
+
+    &-moveEle {
+      cursor: url('./img/move.svg') 0 0, grab !important;
+      width: 24px;
+      height: 24px;
+      background: url('./img/drag_indicator.svg') no-repeat;
+    }
+
+    &-checkbox {
+      &.ant-checkbox-wrapper:hover .ant-checkbox-inner,
+      .ant-checkbox:hover .ant-checkbox-inner,
+      .ant-checkbox-input:focus + .ant-checkbox-inner {
+        border-color: @research-theme-color;
+      }
+
+      .ant-checkbox-checked::after {
+        border-color: @research-theme-color;
+      }
+
+      .ant-checkbox-checked .ant-checkbox-inner {
+        background-color: @research-theme-color;
+        border-color: @research-theme-color;
+      }
+
+      .ant-checkbox + span {
+        display: inline-flex;
+      }
+
+      .ant-checkbox-indeterminate {
+        .ant-checkbox-inner {
+          background-color: #fff;
+          border: 1px solid rgba(0, 0, 0, 0.25);
+          &:after {
+            background-color: @research-theme-color;
+          }
+        }
+      }
+
+      &-title {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 132px;
+      }
+    }
+  }
+}

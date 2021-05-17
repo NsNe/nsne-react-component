@@ -1,0 +1,66 @@
+{
+  "name": "nsne-react-component",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "dumi dev",
+    "docs:build": "dumi build",
+    "docs:deploy": "gh-pages -d docs-dist",
+    "build": "father-build",
+    "deploy": "npm run docs:build && npm run docs:deploy",
+    "release": "npm run build && npm publish",
+    "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
+    "test": "umi-test",
+    "test:coverage": "umi-test --coverage"
+  },
+  "files": [
+    "dist",
+    "es",
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "typings": "lib/index.d.ts",
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "peerDependencies": {
+    "@ant-design/icons": "^4.2.2",
+    "antd": "4.x",
+    "react": "16.x",
+    "react-dom": "16.x"
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.2.11",
+    "@umijs/plugin-antd": "^0.9.0",
+    "@umijs/test": "^3.0.5",
+    "antd": "^4.x",
+    "babel-plugin-file-loader": "^2.0.0",
+    "dumi": "^1.0.35",
+    "father-build": "^1.17.2",
+    "gh-pages": "^3.0.0",
+    "lint-staged": "^10.0.7",
+    "prettier": "^1.19.1",
+    "react": "16.x",
+    "react-dom": "16.x",
+    "vfile-message": "^2.0.4",
+    "yorkie": "^2.0.0"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.2.2",
+    "@types/react-beautiful-dnd": "^13.0.0",
+    "classnames": "^2.2.6",
+    "lodash": "^4.17.20",
+    "moment": "^2.29.1",
+    "rc-tabs": "10.0.0",
+    "re-resizable": "^6.8.0",
+    "react-beautiful-dnd": "^13.0.0"
+  }
+}

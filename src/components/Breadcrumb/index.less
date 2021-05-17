@@ -1,0 +1,24 @@
+@import '../../index.less';
+@prefix: @component-prefix;
+
+.@{prefix}-breadcrumb-wrapper {
+  z-index: 10;
+  padding: 0 24px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  .@{prefix}-breadcrumb {
+    height: 32px;
+    line-height: 32px;
+    span {
+      a {
+        color: #4d5665;
+        &:hover {
+          color: @research-theme-color;
+        }
+      }
+      &:last-child .ant-breadcrumb-link {
+        color: @research-theme-color;
+      }
+    }
+  }
+}

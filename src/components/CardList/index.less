@@ -1,0 +1,50 @@
+@import '../../index.less';
+@prefix: @component-prefix;
+
+.@{prefix}-cardList {
+  &-footer {
+    .ant-pagination {
+      @pagination-border-color: rgba(0, 0, 0, 0.25);
+      margin-bottom: 0;
+      .ant-pagination-prev,
+      .ant-pagination-next {
+        &:hover {
+          button {
+            border-color: @research-theme-color;
+            color: @research-theme-color;
+          }
+        }
+
+        &.ant-pagination-disabled button,
+        button {
+          border-color: @pagination-border-color;
+          color: @pagination-border-color;
+        }
+      }
+
+      .ant-pagination-item {
+        border-color: @pagination-border-color;
+        a {
+          color: rgba(27, 27, 27, 0.54);
+        }
+        &:hover {
+          border-color: @research-theme-color;
+          a {
+            color: @research-theme-color;
+          }
+        }
+      }
+      .ant-pagination-item-active {
+        background: @research-theme-color;
+        border-color: @research-theme-color;
+        a {
+          font-weight: normal;
+          color: rgba(255, 255, 255, 0.9);
+          &:hover {
+            color: rgba(255, 255, 255, 0.9);
+          }
+        }
+      }
+    }
+  }
+}
