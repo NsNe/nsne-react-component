@@ -9,7 +9,7 @@ import { LeftOutlined, RightOutlined } from '@ant-design/icons';
 import { Button, Spin } from 'antd';
 import React, { useEffect, useState } from 'react';
 import classNames from 'classnames';
-import { Text } from '../components';
+import { Text } from '../../components';
 import './index.less';
 
 export interface dataItem {

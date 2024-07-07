@@ -1,15 +1,15 @@
-import Section from './Section';
-import Table from './Table';
-import Expand from './Expand';
-import CardList from './CardList';
-import Breadcrumb from './Breadcrumb';
-import Tag from './Tag';
-import ResizeDrawer from './ResizeDrawer';
-import SettingColumn from './SettingColumn';
-import Modal from './Modal';
-import Text from './Text';
-import Tabs from './Tabs';
-export * from './Tooltip';
+import Section from './section';
+import Table from './table';
+import Expand from './expand';
+import CardList from './card-list';
+import Breadcrumb from './bread-crumb';
+import Tag from './tag';
+import ResizeDrawer from './resize-drawer';
+import SettingColumn from './setting-column';
+import Modal from './modal';
+import Text from './text';
+import Tabs from './tabs';
+export * from './tooltip';
 
 export {
   Section,

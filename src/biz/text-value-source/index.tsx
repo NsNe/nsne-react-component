@@ -7,10 +7,10 @@
  */
 
 import React, { useEffect, useState } from 'react';
-import Text, { TextProps } from '../components/Text';
+import Text, { TextProps } from '../../components/text';
 import { Popover } from 'antd';
 import { PopoverProps } from 'antd/lib/popover';
-import SourceList, { SourceListProps } from '../SourceList';
+import SourceList, { SourceListProps } from '../source-list';
 import classNames from 'classnames';
 import './index.less';
 

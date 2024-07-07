@@ -14,7 +14,7 @@ import { Pagination } from 'antd';
 import React from 'react';
 import classNames from 'classnames';
 import { GetRowKey } from 'antd/lib/table/interface';
-import ExpandIcon from '../Expand/ExpandIcon';
+import ExpandIcon from '../expand/ExpandIcon';
 import CardItem, {
   ExpandedRowRender,
   Key,

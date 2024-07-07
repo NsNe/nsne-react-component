@@ -1,5 +1,5 @@
 /// <reference path="./typings.d.ts" />
 
-export { default as SourceList } from './SourceList';
-export { default as TextValueSource } from './TextValueSource';
+export { default as SourceList } from './biz/source-list';
+export { default as TextValueSource } from './biz/text-value-source';
 export * from './components';
