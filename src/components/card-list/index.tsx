@@ -2,8 +2,8 @@
  * @File: 卡片列表
  * @Author: lintao.wang
  * @Date: 2020-11-06 11:46:26
- * @Last Modified by: lintao.wang
- * @Last Modified time: 2020-11-19 18:24:40
+ * @Last Modified by: mikey.zhaopeng
+ * @Last Modified time: 2024-07-07 17:06:06
  */
 
 import { PaginationProps } from 'antd/lib/pagination';
@@ -227,7 +227,7 @@ const CardList = <RecordType extends object = any>(
 
   const onTriggerExpand: TriggerEventHandler<RecordType> = React.useCallback(
     (record: RecordType) => {
-      const key = getRowKey(record, mergedData.indexOf(record));
+      const key = getRowKey(record, mergedData.indexOf(record)) as string;
 
       let newExpandedKeys: Key[];
       const hasKey = mergedExpandedKeys.has(key);
@@ -256,7 +256,7 @@ const CardList = <RecordType extends object = any>(
 
   const renderList = () => {
     return pageData.map((data, index) => {
-      const Key = getRowKey(data);
+      const Key = getRowKey(data) as string;
       const cardItemProps = {
         record: data,
         index,

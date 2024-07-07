@@ -2,12 +2,13 @@
  * @File: 通过方法调用的 modal
  * @Author: lintao.wang
  * @Date: 2020-11-11 17:59:37
- * @Last Modified by: lintao.wang
- * @Last Modified time: 2020-11-16 19:19:04
+ * @Last Modified by: mikey.zhaopeng
+ * @Last Modified time: 2024-07-07 17:05:41
  */
 import React from 'react';
 import { Modal as AntdModal } from 'antd';
-import { destroyFns, ModalFuncProps } from 'antd/lib/modal/Modal';
+import { ModalFuncProps } from 'antd/lib/modal/Modal';
+import destroyFns from 'antd/lib/modal/destroyFns';
 import ReactDOM from 'react-dom';
 import { getConfirmLocale } from 'antd/lib/modal/locale';
 import classNames from 'classnames';
