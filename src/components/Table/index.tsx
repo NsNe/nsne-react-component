@@ -10,7 +10,7 @@ import React from 'react';
 import { Table as AntdTable } from 'antd';
 import { TableProps } from 'antd/lib/table';
 import classNames from 'classnames';
-import ExpandIcon from '../expand/ExpandIcon';
+import ExpandIcon from '../expand/expand-icon';
 import './index.less';
 
 const Table = <RecordType extends object = any>(

@@ -7,7 +7,7 @@
  */
 
 import React, { useEffect } from 'react';
-import ExpandIcon, { ExpandIconProps } from './ExpandIcon';
+import ExpandIcon, { ExpandIconProps } from './expand-icon';
 import classNames from 'classnames';
 import './index.less';
 
