@@ -14,7 +14,7 @@ import ColumnPopover, {
   ColumnType,
   ColumnItem,
   getColumnKey,
-} from './ColumnPopover';
+} from './column-popover';
 import './index.less';
 import _ from 'lodash';
 

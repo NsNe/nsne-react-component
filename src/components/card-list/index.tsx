@@ -20,7 +20,7 @@ import CardItem, {
   Key,
   RenderExpandIcon,
   TriggerEventHandler,
-} from './CardItem';
+} from './card-item';
 import noDAtaIcon from './img/noData_small.svg';
 import './index.less';
 
