@@ -1,0 +1,21 @@
+@import '../../../index.less';
+@prefix: @component-prefix;
+
+.@{prefix}-expand-icon {
+  display: inline-flex;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  .flex_init_func(@ai: center);
+  &-title {
+    margin-left: 4px;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: @font-size-medium;
+    font-family: @font-family-medium;
+    line-height: 24px;
+    vertical-align: middle;
+    user-select: none;
+    &-active {
+      color: @research-theme-color;
+    }
+  }
+}

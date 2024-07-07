@@ -1,0 +1,93 @@
+@import '../../index.less';
+@prefix: @component-prefix;
+
+.@{prefix}-table {
+  .ant-table {
+    border: @border-normal;
+    .ant-table-thead {
+      > tr > th {
+        height: 40px;
+        padding: 0 16px;
+        color: #000;
+        font-family: @font-family-medium;
+        background: #dff7f3;
+        border-color: @border-normal-color;
+      }
+    }
+
+    .ant-table-tbody {
+      > tr {
+        &.ant-table-row {
+          > td {
+            height: 40px;
+            padding: 0 16px;
+            color: #1b1b1b;
+            border-color: @border-normal-color;
+          }
+          &:hover {
+            > td {
+              background: #f8fafb;
+            }
+          }
+        }
+
+        &.ant-table-expanded-row {
+          > td {
+            padding: 24px;
+            border-color: @border-normal-color;
+            .ant-table-wrapper:only-child .ant-table {
+              margin: 0;
+              .ant-table-tbody > tr:last-child > td {
+                border-bottom: @border-normal;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .ant-pagination {
+    @pagination-border-color: rgba(0, 0, 0, 0.25);
+    margin-bottom: 0;
+    .ant-pagination-prev,
+    .ant-pagination-next {
+      &:hover {
+        button {
+          color: @research-theme-color;
+          border-color: @research-theme-color;
+        }
+      }
+
+      &.ant-pagination-disabled button,
+      button {
+        color: @pagination-border-color;
+        border-color: @pagination-border-color;
+      }
+    }
+
+    .ant-pagination-item {
+      border-color: @pagination-border-color;
+      a {
+        color: rgba(27, 27, 27, 0.54);
+      }
+      &:hover {
+        border-color: @research-theme-color;
+        a {
+          color: @research-theme-color;
+        }
+      }
+    }
+    .ant-pagination-item-active {
+      background: @research-theme-color;
+      border-color: @research-theme-color;
+      a {
+        color: rgba(255, 255, 255, 0.9);
+        font-weight: normal;
+        &:hover {
+          color: rgba(255, 255, 255, 0.9);
+        }
+      }
+    }
+  }
+}

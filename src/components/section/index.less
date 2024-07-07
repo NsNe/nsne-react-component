@@ -1,0 +1,22 @@
+@import '../../index.less';
+@prefix: @component-prefix;
+
+.@{prefix}-section {
+  border: @border-normal;
+  border-radius: 4px;
+  &-header {
+    height: 48px;
+    padding: 0 24px;
+    border-bottom: @border-normal;
+    .flex_init_func(space-between; center);
+    &-title {
+      color: #1b1b1b;
+      font-size: @font-size-medium;
+      font-family: @font-family-medium;
+    }
+  }
+
+  &-body {
+    padding: 16px 24px 24px;
+  }
+}

@@ -1,0 +1,38 @@
+@import '../../index.less';
+@prefix: @component-prefix;
+
+.@{prefix}-text-container {
+  display: inline-flex;
+  align-items: center;
+  height: 22px;
+  line-height: 22px;
+
+  .@{prefix}-text {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    &-label {
+      color: rgba(0, 0, 0, 0.85);
+      &-colon {
+        display: inline-block;
+        margin: 0 4px;
+      }
+    }
+    &-value {
+      color: rgba(27, 27, 27, 0.54);
+    }
+    &-link {
+      color: @research-theme-color;
+      cursor: pointer;
+    }
+  }
+}
+
+.@{prefix}-text-overlay {
+  max-width: 420px;
+  .ant-tooltip-content {
+    max-height: 240px;
+    overflow-y: auto;
+  }
+}

@@ -1,0 +1,38 @@
+@import '../../index.less';
+@prefix: @component-prefix;
+
+.@{prefix}-tabs {
+  border-bottom: 0;
+  .rc-tabs-bar {
+    padding: 0 20px;
+    border-bottom: @border-normal;
+    .rc-tabs-tab-prev {
+      text-align: left;
+    }
+
+    .rc-tabs-tab-next {
+      text-align: right;
+    }
+
+    .rc-tabs-tab {
+      margin-right: 32px;
+      padding: 8px 0;
+      color: #1b1b1b;
+      font-weight: normal;
+      font-size: 16px;
+      &-active {
+        color: @research-theme-color;
+      }
+    }
+    .rc-tabs-ink-bar {
+      height: 3px;
+      background-color: @research-theme-color;
+    }
+  }
+
+  .rc-tabs-content {
+    .rc-tabs-tabpane {
+      padding: 24px;
+    }
+  }
+}
